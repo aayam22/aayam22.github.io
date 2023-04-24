@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contact</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style3.css">
+        <title></title>
+    </head>
+    <body>
+        <div>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa fa-bars"></i>
+                </label>
+                <label class="logo">AS STUDIO</label>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="aboutus.html">Aboutus</a></li>
+                    <li><a class="active" href="contact.html">contact</a></li>
+                    <li><a href="Career.html">Career</a></li>
+                </ul>
+            </nav>
+            <section></section>
+        <div class="box">
+        <div class="title2"><h1>Contact</h1></div>
+        <div>
+        <div Class="form1">
+        <form name="myForm" action="" onsubmit="return validateForm()" method="post" >
+            <div>
+                <label for="fname">name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" placeholder="First name" name="fname" size="32px" id="fname"><br><br>
+            </div>
+            <div>
+                <label for="lname">Lastname</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" placeholder="Last name" name="lname" size="32px" id="lname"><br><br>
+            </div>
+            <div>
+                <label for="email">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="email" placeholder="Email" name="em" size="32px" id="email"><br><br>
+            </div>
+            <div>
+                <label for="phone">phone</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" placeholder="phone" name="ph" size="32px" id="phone"><br><br>
+            </div>
+            <div>
+               <label  for="Address">Address</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" placeholder="Address" size="32px" id="Address"><br><br>
+            </div>
+            <div>
+                <textarea rows="4" cols="44">Type your message here</textarea><br>
+            </div>
+            <div>
+                <input type=submit value="Submit">
+            </div>
+        </form>
+        </div>
+        </div>
+        <script>
+            function validateForm() {
+                let x = document.forms["myForm"]["fname"].value;
+                if (x == "") {
+                  alert("Name must be filled out");
+                  return false;
+                }
+                let y = document.forms["myForm"]["lname"].value;
+                if (y == "") {
+                  alert("Name must be filled out");
+                  return false;
+                }
+                let z = document.forms["myForm"]["em"].value;
+                if (z == "") {
+                  alert("email must be filled out");
+                  return false;
+                }
+                let aa = document.forms["myForm"]["ph"].value;
+                if (aa == "") {
+                  alert("number");
+                  return false;
+                }
+            }
+        </script>
+    </body>
+</html>

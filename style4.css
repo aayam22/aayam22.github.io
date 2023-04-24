@@ -1,0 +1,30 @@
+div.box2{
+    background:linear-gradient(45deg,#87adfe,#8e8d9a);
+    max-width: auto;
+    height: 300px;
+    padding: 50px;
+    color: white;
+}
+div.box2 h1{
+    text-align: center;
+    font-size: 60px;
+    color: #1484b6;
+}
+div.content3 img{
+    width: 700px;
+}
+img{
+    width: 600px;
+    margin-top: 50px;
+    margin-left: 375px;
+    height: 300px;
+}
+p{
+    margin: 50px;
+    width: 600px;
+    margin-left: 450px;
+    color:#1484b6;
+}
+p em{
+    font-size: 45px;
+}
